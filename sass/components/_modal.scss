@@ -109,8 +109,7 @@ textarea.modal__form-input-text::placeholder{
     position:relative;
 }
 
-&__contact-form .modal__form-item:focus-within,
-&__contact-form .modal__form-item:hover{
+&__contact-form .modal__form-item:focus-within{
     fill: var(--sec-color);
     outline: none;
     --input-form-border: var(--sec-color);

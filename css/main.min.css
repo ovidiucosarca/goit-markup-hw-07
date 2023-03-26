@@ -384,7 +384,7 @@ textarea.modal__form-input-text::placeholder {
   gap: 4px;
   position: relative;
 }
-.modal__contact-form .modal__form-item:focus-within, .modal__contact-form .modal__form-item:hover {
+.modal__contact-form .modal__form-item:focus-within {
   fill: var(--sec-color);
   outline: none;
   --input-form-border: var(--sec-color);
@@ -661,7 +661,7 @@ body {
   justify-content: space-between;
   gap: 30px;
   margin: 0px;
-  /* padding:94px 0px; */
+  padding: 0px;
 }
 .studioq__image {
   width: 270px;
