@@ -26,9 +26,14 @@ body {
 /* ----------------------------------------- */
 
 .container {
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0px auto;
 	padding: 94px 0px 0px 0px;
+
+	&__header{
+		max-width: 1200px;
+		margin: 0px auto;
+	}	
 
 	&__team {
 		display: flex;
@@ -55,7 +60,7 @@ body {
 /* ----------------------------------------- */
 
 .section {
-	width: 1200px;
+	max-width: 1200px;
 	margin: auto;
 	padding: 0px, 94px;
 }

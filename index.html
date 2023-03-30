@@ -87,7 +87,7 @@
 		</div>
 
 <!-- Sectiunea de meniu + date de contact -->
-	<section class="section">
+	<section class="container__header">
 		<div class="header">
 
 				<header class="header__divide">
@@ -97,7 +97,7 @@
 						>
 					</h2>
 
-					<nav>
+					<nav class="menu">
 						<ul class="unstyled-list header__grid">
 							<li class="header__grid__place">
 								<a class="header__grid__link" href="index.html">Studio</a>
@@ -115,7 +115,7 @@
 						</ul>
 					</nav>
 
-					<ul class="unstyled-list grid__contact">
+					<ul class="unstyled-list menu grid__contact">
 
 						<li class="grid__contact__group">
 							<div class="grid__contact__element">
@@ -142,29 +142,29 @@
 							>
 						</li>
 					</ul>
-				</header>			
+
+					<button
+						class="menu-toggle js-open-menu"
+						aria-expanded="false"
+						aria-controls="mobile-menu"
+					 >
+						<svg
+						width="24"
+						height="24"
+						fill="currentColor"
+						viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg"
+						>
+						<path
+							fill-rule="evenodd"
+							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+							clip-rule="evenodd"
+						></path>
+						</svg>
+					</button>
+
+			</header>			
 		</div>
-
-		<button
-		class="menu-toggle js-open-menu"
-		aria-expanded="false"
-		aria-controls="mobile-menu"
-	  >
-		<svg
-		  width="24"
-		  height="24"
-		  fill="currentColor"
-		  viewBox="0 0 20 20"
-		  xmlns="http://www.w3.org/2000/svg"
-		>
-		  <path
-			fill-rule="evenodd"
-			d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-			clip-rule="evenodd"
-		  ></path>
-		</svg>
-	  </button>
-
 	</section>
 
 		<main>
@@ -191,9 +191,9 @@
 				<div class="section">
 					
 						<ul class="unstyled-list studioq__grid">
-							<li>
+							<li class="studioq__x">
 								<div class="studioq__image">
-										<svg width="65.32" height="70">
+										<svg height="70">
 											<use
 												href="svg/symbol-defs.svg#icon-SQ-antenna-1"
 											></use>
@@ -209,9 +209,9 @@
 									customized solution.
 								</p>
 							</li>
-							<li>
+							<li class="studioq__x">
 								<div class="studioq__image">
-										<svg width="66.96" height="70">
+										<svg height="70">
 											<use
 												href="svg/symbol-defs.svg#icon-SQ-clock-1"
 											></use>
@@ -226,7 +226,7 @@
 									respect your time and deadlines.
 								</p>
 							</li>
-							<li>
+							<li class="studioq__x">
 								<div class="studioq__image">
 										<svg height="70">
 											<use
@@ -242,7 +242,7 @@
 									development and implementation.
 								</p>
 							</li>
-							<li>
+							<li class="studioq__x">
 								<div class="studioq__image">
 										<svg height="70">
 											<use
@@ -253,8 +253,8 @@
 								<h3 class="studioq__title">MODERN TECHNOLOGIES</h3>
 								<p class="studioq__type">
 									We use innovative tools to solve <br />
-									assigned tasks. It's time to simplify work
-									processes.
+									assigned tasks. It's time to simplify <br />
+									work processes.
 								</p>
 							</li>
 						</ul>
@@ -265,7 +265,7 @@
 
 		<!-- Sectiune 3 - WHAT WE DO -->
 
-			<section class="container">
+			<section class="container wwd">
 				<div class="section">
 						
 						<h2 class="what">What we do</h2>
@@ -316,7 +316,7 @@
 
 						<ul class="unstyled-list team__photos__grid">
 
-							<li>
+							<li class="team__x">
 								<div class="team__member">
 									<img
 										class="team__image"
@@ -365,7 +365,7 @@
 								</div>
 							</li>
 
-							<li>
+							<li class="team__x">
 								<div class="team__member">
 									<img
 										class="team__image"
@@ -411,7 +411,7 @@
 								</div>
 							</li>
 
-							<li>
+							<li class="team__x">
 								<div class="team__member">
 									<img
 										class="team__image"
@@ -457,7 +457,7 @@
 								</div>
 							</li>
 
-							<li>
+							<li class="team__x">
 								<div class="team__member">
 									<img
 										class="team__image"
@@ -565,14 +565,17 @@
 		</main>
 
 		<div class="menu-container js-menu-container" id="mobile-menu">
-			<button class="menu-toggle js-close-menu">
-			  <svg
-				fill="currentColor"
-				viewBox="0 0 20 20"
-				xmlns="http://www.w3.org/2000/svg"
-				width="24"
-				height="24"
-			  >
+			<button
+          class="menu-toggle js-close-menu"
+
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
 				<path
 				  fill-rule="evenodd"
 				  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -581,12 +584,31 @@
 			  </svg>
 			</button>
 	  
-			<ul class="mobile-menu">
-			  <li><a href="" class="link">About</a></li>
-			  <li><a href="" class="link">Products</a></li>
+			<ul class="unstyled-list mobile-menu">
+			  <li><a href="/studio.html" class="link">Studio</a></li>
+			  <li><a href="/portofolio.html" class="link">Portofolio</a></li>
 			  <li><a href="" class="link">Contacts</a></li>
-			  <li><a href="" class="link">Career</a></li>
 			</ul>
+
+			<ul class="unstyled-list mobile-menu mobile-menu__contact">
+				<li>
+					<a href="tel:+12127724150" class=" mobile-menu__info mobile-menu__phone">+1 212-772-4150</a>
+				</li>
+				<li>
+					<a href="mailto:info@devstudio.com" class="mobile-menu__info">
+						info@devstudio.com
+					</a>
+				</li>
+				<ul class="unstyled-list mobile-menu mobile-menu__social">
+					<li><a href="" class="mobile-menu__link">Instagram</a></li>
+					<li><a href="" class="mobile-menu__link">Twitter</a></li>
+					<li><a href="" class="mobile-menu__link">Facebook</a></li>
+					<li><a href="" class="mobile-menu__link__mod">LinkedIn</a></li>
+				  </ul>
+				</div>
+			</ul>
+	
+
 		  </div>
 
 
